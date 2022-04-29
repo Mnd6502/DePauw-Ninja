@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DePauw Ninja</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"
+      integrity="sha512-NxocnqsXP3zm0Xb42zqVMvjQIktKEpTIbCXXyhBPxqGZHqhcOXHs4pXI/GoZ8lE+2NJONRifuBpi9DxC58L0Lw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"
+      integrity="sha512-4P0ZJ49OMXe3jXT+EsEaq82eNwFeyYL81LeHGzGcEhowFbTqeQ80q+NEkgsE8tHPs6aCqvi7U+XWliAjDmT5Lg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.js"
+      integrity="sha512-U2sgwrFhl+Tgx9iGH9h5Ba2WyIjyCes+D0prtIFw3a0V+/fkaeL5Cd/VjyPHno9kUPE1rnNhBGTyvtZsfJp0xg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js"
+      integrity="sha512-WzkwpdWEMAY/W8WvP9KS2/VI6zkgejR4/KTxTl4qHx0utqeyVE0JY+S1DlMuxDChC7x0oXtk/ESji6a0lP/Tdg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.js"
+      integrity="sha512-kTA5As3DFbe7Gz6vIpsyaWjX9WSEKeyGigJkmzlQDIUVlPV5ceFxKHG+CAXvbxQvd8iVWJ6nS5egDw1WCss4Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js"
+      integrity="sha512-5T245ZTH0m0RfONiFm2NF0zcYcmAuNzcGyPSQ18j8Bs5Pbfhp5HP1hosrR8XRt5M3kSRqzjNMYpm2+it/AUX/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="canvas"></div>
+      <div class="menu">
+        <h1 class="game_title">DePauw Ninja</h1>
+        <button id="play_button">Play</button>
+        <button id="howto_button">How to play</button>
+        <button id="quit">Quit</button>
+      </div>
+      <div class="howto">
+        <p>
+          Inspired by Fruit Ninja, we created a simpler version and named it
+          DePauw Ninja.
+        </p>
+        <p>
+          When the game starts, you will play through 5 rounds and guess the
+          name of different buildings at DePauw by clicking the pictures of it.
+        </p>
+        <p>
+          In each round, you will be given the name of a random building, and 4
+          pictures of 4 different buildings are tossed. Your job is to click on
+          the correct one before it falls off the screen.
+        </p>
+        <button id="howto_back">⇦</button>
+      </div>
+      <div class="countdown">
+        <h5 id="round" style="text-decoration: underline">
+          Don't Inspect ME!!!!
+        </h5>
+        <p id="question">Don't Inspect ME!!!!</p>
+        <p id="second"></p>
+      </div>
+      <div class="answer">
+        <p id="thisis">Don't Inspect ME!!!!</p>
+        <img
+          src=""
+          alt="Don't Inspect ME!!!!"
+          id="img_answer"
+          style="height: 30%; aspect-ratio: 1/1"
+        />
+      </div>
+      <div class="result">
+        <h1 id="correctness">Don't Inspect ME!!!!</h1>
+        <div style="flex-direction: row">
+          <button id="replay_button">Replay</button>
+          <button id="backto_menu">Back to Menu</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+  <script src="./utils.js"></script>
+  <script src="./Image.js"></script>
+</html>

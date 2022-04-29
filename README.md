@@ -1,2 +1,1 @@
-# DePauw Ninja
- DePauw TenzerHack 2022 Hackathon 
+# tenzerhack2022
